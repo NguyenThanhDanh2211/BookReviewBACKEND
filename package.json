@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NguyenThanhDanh2211/BookReviewBACKEND.git"
+  },
+  "keywords": [
+    "BookReview"
+  ],
+  "author": "Nguyen Thanh Danh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NguyenThanhDanh2211/BookReviewBACKEND/issues"
+  },
+  "homepage": "https://github.com/NguyenThanhDanh2211/BookReviewBACKEND#readme",
+  "dependencies": {
+    "argon2": "^0.30.3",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.3"
+  }
+}
