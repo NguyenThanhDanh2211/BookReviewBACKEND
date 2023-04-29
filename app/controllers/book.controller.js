@@ -65,10 +65,20 @@ const deleteBook = async (req, res) => {
   }
 };
 
+const deleteAllBooks = async (req, res) => {
+  try {
+    await Book.deleteMany({});
+    res.json({ message: "All book deleted" });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+
 module.exports = {
   getAllBooks,
   getBookById,
   createBook,
   updateBook,
   deleteBook,
+  deleteAllBooks,
 };
