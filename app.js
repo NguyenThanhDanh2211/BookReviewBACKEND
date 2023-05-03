@@ -10,6 +10,10 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to Book Review Application." });
 });
 
+const bodyParser = require("body-parser");
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
 const authRouter = require("./app/routes/user.route");
 app.use("/api/auth", authRouter);
 

@@ -22,7 +22,7 @@ exports.register = async (req, res) => {
       username: username,
       password: hashedPassword,
     });
-    newUser.save();
+    await newUser.save();
     res
       .status(200)
       .json({ success: true, message: "User created successfully" });
